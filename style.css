@@ -1,7 +1,3 @@
-
-/*---Created By - Monu ----*/
-/*----CSS-----*/
-
 /*--Importing Fonts---*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Caveat&family=Orbitron&display=swap');
      
@@ -14,6 +10,7 @@
    -webkit-box-sizing:border-box;
    outline:none;
    -webkit-tap-highlight-color:transparent;
+   transition: .2s;
 }
 
 /*---CSS Variables---*/
@@ -35,9 +32,9 @@ button{
 html,body{
    width:100%;
    height:100%;
-   font-size:18px;
-   scroll-behaviour:smooth;
-   font-family:Roboto,"Sans Serif";
+   font-size:16px;
+   scroll-behavior: smooth;
+   font-family:"Roboto", Sans-Serif;
 }
 
 body{
@@ -45,7 +42,7 @@ body{
    color:#fff;
 }
 
-#loadin_pg,.nav,#mnPlrBtn,#srchFild,#settings,#player,#fixPlrWrap,.themeClos,#hdphone::before,#hdphone::after{
+#loadin_pg,#mnPlrBtn,#srchFild,#settings,#player,#fixPlrWrap,.themeClos,#hdphone::before,#hdphone::after{
    left:50%;
    transform:translateX(-50%);
    -webkit-transform:translateX(-50%);
@@ -57,20 +54,20 @@ section{
    position:relative;
    background:linear-gradient(to bottom right, #000,#222,#000);
    background:-webkit-linear-gradient(bottom right, #000,#222,#000);
-   padding-top:6.25rem;
    overflow-y:scroll;
    z-index:2;
-   max-width:640px;
+   max-width:480px;
    margin:auto;
 }
 
 #loadin_pg{
    z-index:10;
+   padding-top: 6.25rem;
    position:fixed;
    top:0;
    transition:top .3s;
    -webkit-transition:top .3s;
-   max-width:640px;
+   max-width:480px;
 }
 #hdphone{
    width:11rem;
@@ -240,18 +237,19 @@ section{
    top:100%;
    color:white;
    width:100%;
-   max-width:640px;
+   max-width:480px;
    padding:0;
    transition:top .3s;
    flex-direction:column;
    -webkit-box-orient:vertical;
+   justify-content: space-between;
    transition:top .3s;
    -webkit-transition:top .3s;
 }
 #player{
    animation:cmFbot .3s;
    -webkit-animation:cmFbot .3s;
-   font-size:5vw;
+   font-size: 20px;
 }
 
 #themePlat>div{
@@ -259,14 +257,6 @@ section{
    left:50%;
    transform:translate(-50%,-50%);
    -webkit-transform:translate(-50%,-50%);
-}
-.top{
-   background:var(--theme-D);
-   position:absolute;
-   top:0;
-   left:0;
-   z-index:5;
-   width:100%;
 }
 .header,.nav,.songCnt,.likSongCnt,.aNd,#fixPlayer,#plrTop,#plrBot,#playCnt,#track_set>div,#songDet3,#srchFild,#setiTop,#themePlat>div,.freqCont,#player{
    display:flex;
@@ -280,6 +270,9 @@ section{
    font-size:1.2rem;
    font-weight:bold;
    padding:.2rem 0;
+   background:var(--theme-D);
+   position: relative;
+   z-index: 50;
 }
 .header>span,.nav>button,.aNd,.songDet,#songDet2,#plrTop>div,#searchBar,#setiTop>p{
    flex:1;
@@ -288,7 +281,7 @@ section{
 .header>span{
    padding:.6rem 1rem;
    display:block;
-   font-family:Caveat,"Cursive";
+   font-family:"Caveat", Cursive;
    font-size:1.3rem;
    letter-spacing:1px;
 }
@@ -315,6 +308,7 @@ section{
    width:3rem;
    height:100%;
    font-size:1.5rem;
+   padding-bottom: 7px;
 }
 
 #searchBar{
@@ -332,16 +326,14 @@ section{
    background:linear-gradient(var(--theme-D),var(--theme),var(--theme));
    background:-webkit-linear-gradient(var(--theme-D),var(--theme),var(--theme));
    width:100%;
-   margin:auto;
    height:2.9rem;
-   position:relative;
-   margin-bottom:-1.2rem;
+   position:sticky;
+   z-index: 50;
+   top: 0;
    border-radius:0 0 1.4rem 1.4rem;
 }
 .nav>button{
    border-radius:2.5rem;
-   justify-content:justify;
-   -webkit-box-pack:justify;
    margin:0 .15rem;
    font-size:.8rem;
    position:relative;
@@ -430,7 +422,7 @@ section{
 }
 #fixPlrWrap{
    position:fixed;
-   max-width:640px;
+   max-width:480px;
    z-index:20;
    bottom:0;
    width:100%;
@@ -650,6 +642,7 @@ section{
 }
 
 #track{
+   appearance: none;
    -webkit-appearance:none;
    display:block;
    margin:.5em auto;
@@ -782,7 +775,7 @@ section{
    padding:0;
    color:white;
    position:fixed;
-   max-width:640px;
+   max-width:480px;
    animation:cmFright2 .3s;
    -webkit-animation:cmFright2 .3s;
    overflow:auto;
@@ -968,16 +961,8 @@ section{
 
 
 /* Media Query */
-@media screen and (max-width:359px){
-   html{
-      font-size:16px;
-   }
-}
 @media screen and (min-width:481px){
    html{
-      font-size:21px;
-   }
-   #player{
-      font-size:24px;
+      font-size:18px;
    }
 }
