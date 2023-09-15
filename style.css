@@ -32,7 +32,7 @@ button{
 html,body{
    width:100%;
    height:100%;
-   font-size:16px;
+   font-size:18px;
    scroll-behavior: smooth;
    font-family:"Roboto", Sans-Serif;
 }
@@ -41,8 +41,12 @@ body{
    position:relative;
    color:#fff;
 }
-
-#loadin_pg,#mnPlrBtn,#srchFild,#settings,#player,#fixPlrWrap,.themeClos,#hdphone::before,#hdphone::after{
+.container{
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+#loadin_pg,#mnPlrBtn,#srchFild,.themeClos,#hdphone::before,#hdphone::after{
    left:50%;
    transform:translateX(-50%);
    -webkit-transform:translateX(-50%);
@@ -274,7 +278,7 @@ section{
    position: relative;
    z-index: 50;
 }
-.header>span,.nav>button,.aNd,.songDet,#songDet2,#plrTop>div,#searchBar,#setiTop>p{
+.header>span,.nav>button,.aNd,.songDet,#songDet2,#plrTop>div,#searchBar,#setiTop>p,.container{
    flex:1;
    -webkit-box-flex:1;
 }
@@ -360,6 +364,7 @@ section{
 #allSongs,#favs{
    position:relative;
    padding-bottom:4.4rem;
+   height: 100%;
 }
 #allSongs{
    animation:cmFleft .3s;
@@ -421,7 +426,7 @@ section{
    color:#ccc;
 }
 #fixPlrWrap{
-   position:fixed;
+   position:sticky;
    max-width:480px;
    z-index:20;
    bottom:0;
@@ -690,8 +695,8 @@ section{
 }
 
 #playCnt,#plrBot,#track_set>div,#themePlat>div,.freqCont{
-   justify-content:justify;
-   -webkit-box-pack:justify;
+   justify-content:space-between;
+   -webkit-box-pack: justify;
 }
 
 #curDur,#endDur{
@@ -714,10 +719,10 @@ section{
 }
 #loop,#share{
    color:#fff;
-   font-size:.9em;
+   font-size:.8em;
    border-radius:50%;
-   width:1.5em;
-   height:1.5em;
+   width:1.8em;
+   height:1.8em;
    box-shadow:none;
 }
 
@@ -774,10 +779,7 @@ section{
    display:none;
    padding:0;
    color:white;
-   position:fixed;
-   max-width:480px;
-   animation:cmFright2 .3s;
-   -webkit-animation:cmFright2 .3s;
+   position:absolute;
    overflow:auto;
 }
 
@@ -964,5 +966,27 @@ section{
 @media screen and (min-width:481px){
    html{
       font-size:18px;
+   }
+   body{
+      display: flex;
+   }
+   #music_pg{
+      max-width: 100%;
+   }
+   #player{
+      display: flex;
+      display: -webkit-box;
+      position: relative;
+      width: 480px;
+      top: 0;
+   }
+   #fixPlrWrap{
+      margin:0 auto;
+   }
+   #mnPlrBtn{
+      display: none;
+   }
+   .plrBack{
+      visibility: hidden;
    }
 }
