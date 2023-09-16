@@ -523,7 +523,7 @@
    function oSettings(){
       settings.style.display="block";
       setTimeout(()=> settings.style.left = "0");
-      music_pg.style.display = "none";
+      setTimeout(()=>music_pg.style.display = "none",200);
    }
    function cSettings(){
       settings.style.left = "100%";
