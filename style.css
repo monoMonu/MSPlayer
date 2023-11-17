@@ -6,8 +6,8 @@
 *::after{
    padding:0;
    margin:0;
-   box-sizing:border-box;
    -webkit-box-sizing:border-box;
+   box-sizing:border-box;
    outline:none;
    -webkit-tap-highlight-color:transparent;
    transition: .2s;
@@ -32,6 +32,7 @@ button{
 html,body{
    width:100%;
    height:100%;
+   overflow-x: hidden;
    font-size:18px;
    scroll-behavior: smooth;
    font-family:"Roboto", Sans-Serif;
@@ -46,18 +47,19 @@ body{
    position: relative;
    overflow: hidden;
 }
-#loadin_pg,#mnPlrBtn,#srchFild,.themeClos,#hdphone::before,#hdphone::after{
+#loadin_pg,#mnPlrBtn,#srchFild,.themeClos,#hdphone::before,#hdphone::after,#fixPlrWrap{
    left:50%;
-   transform:translateX(-50%);
    -webkit-transform:translateX(-50%);
+   transform:translateX(-50%);
 }
 
 section{
+   overflow-x: hidden;
    width:100%;
    height:100%;
    position:relative;
-   background:linear-gradient(to bottom right, #000,#222,#000);
    background:-webkit-linear-gradient(bottom right, #000,#222,#000);
+   background:linear-gradient(to bottom right, #000,#222,#000);
    overflow-y:scroll;
    z-index:2;
    margin:auto;
@@ -68,8 +70,8 @@ section{
    padding-top: 6.25rem;
    position:fixed;
    top:0;
-   transition:top .3s;
    -webkit-transition:top .3s;
+   transition:top .3s;
 }
 #hdphone{
    width:11rem;
@@ -146,19 +148,19 @@ section{
    display:block;
    width:.55rem;
    height:30%;
-   background:radial-gradient(at left,#dda8c6,#c68);
    background:-webkit-radial-gradient(left,#dda8c6,#c68);
+   background:radial-gradient(at left,#dda8c6,#c68);
    border-radius:.7rem;
-   animation:beat 3s infinite;
    -webkit-animation:beat 3s infinite;
+   animation:beat 3s infinite;
 }
 .f1,.f5{
-   animation-delay:1s;
    -webkit-animation-delay:1s;
+   animation-delay:1s;
 }
 .f2,.f4{
-   animation-delay:.5s;
    -webkit-animation-delay:.5s;
+   animation-delay:.5s;
 }
 
 @keyframes beat{
@@ -212,8 +214,8 @@ section{
    border:.3rem transparent solid;
    margin:1.5rem auto;
    border-color:rgba(170,170,255,.8) rgba(170,170,255,.15) rgba(170,170,255,.35) rgba(170,170,255,.55);
-   animation:spin .5s linear infinite;
    -webkit-animation:spin .5s linear infinite;
+   animation:spin .5s linear infinite;
 }
 @keyframes spin{
    from{
@@ -245,28 +247,28 @@ section{
    flex-direction:column;
    -webkit-box-orient:vertical;
    justify-content: space-between;
-   transition:top .3s;
    -webkit-transition:top .3s;
+   transition:top .3s;
 }
 #player{
-   animation:cmFbot .3s;
    -webkit-animation:cmFbot .3s;
+   animation:cmFbot .3s;
    font-size: 20px;
 }
 
 #themePlat>div{
    top:50%;
    left:50%;
-   transform:translate(-50%,-50%);
    -webkit-transform:translate(-50%,-50%);
+   transform:translate(-50%,-50%);
 }
 .header,.nav,.songCnt,.likSongCnt,.aNd,#fixPlayer,#plrTop,#plrBot,#playCnt,#track_set>div,#songDet3,#srchFild,#setiTop,#themePlat>div,.freqCont,#player,#songLoaader1{
-   display:flex;
    display:-webkit-box;
+   display:flex;
 }
 .songCnt,.likSongCnt,.aNd,#fixPlayer,#plrTop,#playCnt,#songDet3,#srchFild,#setiTop,.freqCont, #songLoader1{
-   align-items:center;
    -webkit-box-align:center;
+   align-items:center;
 }
 .header{
    font-size:1.2rem;
@@ -276,7 +278,7 @@ section{
    position: relative;
    z-index: 50;
 }
-.header>span,.nav>button,.aNd,.songDet,#songDet2,#plrTop>div,#searchBar,#setiTop>p,.container{
+.header>span,.nav>button,.aNd,#songDet2,#plrTop>div,#searchBar,#setiTop>p,.container{
    flex:1;
    -webkit-box-flex:1;
 }
@@ -302,8 +304,8 @@ section{
    overflow:hidden;
    height:3rem;
    background:var(--theme-D);
-   transition:width .3s;
    -webkit-transition:width .3s;
+   transition:width .3s;
 }
 
 #srchBack{
@@ -325,8 +327,8 @@ section{
 }
 
 .nav{
-   background:linear-gradient(var(--theme-D),var(--theme),var(--theme));
    background:-webkit-linear-gradient(var(--theme-D),var(--theme),var(--theme));
+   background:linear-gradient(var(--theme-D),var(--theme),var(--theme));
    width:100%;
    height:2.9rem;
    position:sticky;
@@ -365,24 +367,24 @@ section{
    height: 100%;
 }
 #allSongs{
-   animation:cmFleft .3s;
    -webkit-animation:cmFleft .3s;
+   animation:cmFleft .3s;
 }
 #favs{
    display:none;
-   animation:cmFright .3s;
    -webkit-animation:cmFright .3s;
+   animation:cmFright .3s;
 }
 .songCnt,.likSongCnt{
    padding:.5rem 0;
    margin:.2rem;
    border-radius:.4rem;
-   background:linear-gradient(to top left, rgba(255,255,255,.1),transparent,rgba(255,255,255,.1));
    background:-webkit-linear-gradient(top left, rgba(255,255,255,.1),transparent,rgba(255,255,255,.1));
+   background:linear-gradient(to top left, rgba(255,255,255,.1),transparent,rgba(255,255,255,.1));
    left:0;
    position:relative;
-   transition:left .3s, background .3s;
    -webkit-transition:left .3s, background .3s;
+   transition:left .3s, background .3s;
 }
 .alb1{
    width:3rem;
@@ -401,15 +403,15 @@ section{
    margin-right:.3rem;
 }
 .liked,.lik{
-   animation:like 1s;
    -webkit-animation:like 1s;
+   animation:like 1s;
 }
 .aNd{
    padding-right:.5rem;
 }
 .name1,.singer1,#name2,#singers2,#name3,#singers3{
    overflow:hidden;
-   text-overflow:ellipsis;
+   text-overflow: ellipsis;
    white-space:nowrap;
    position:relative;
    padding-left:.2rem;
@@ -424,7 +426,7 @@ section{
    color:#ccc;
 }
 #fixPlrWrap{
-   position:sticky;
+   position:fixed;
    max-width:480px;
    margin:0 auto;
    z-index:20;
@@ -432,14 +434,15 @@ section{
    width:100%;
    height:4.5rem;
    padding:0 0 .1rem;
-   transition:bottom .3s;
    -webkit-transition:bottom .3s;
+   transition:bottom .3s;
 }
 #fixPlayer{
+   flex-wrap: nowrap;
    height:100%;
    background:var(--theme-D-trans);
-   backdrop-filter:blur(10px);
    -webkit-backdrop-filter:blur(10px);
+   backdrop-filter:blur(10px);
    border-radius:.7rem;
    padding:0 .3rem;
    margin:0 .2rem;
@@ -565,8 +568,8 @@ section{
    border-radius:50%;
    border:.3rem transparent solid;
    border-color:rgba(170,170,255,.8) rgba(170,170,255,.15) rgba(170,170,255,.35) rgba(170,170,255,.55);
-   animation:spin .5s linear infinite;
    -webkit-animation:spin .5s linear infinite;
+   animation:spin .5s linear infinite;
 }
 @keyframes spin{
    from{
@@ -586,12 +589,12 @@ section{
 }
 
 .nxt{
-   animation:cmFright .3s;
    -webkit-animation:cmFright .3s;
+   animation:cmFright .3s;
 }
 .prev{
-   animation:cmFleft .3s;
    -webkit-animation:cmFleft .3s;
+   animation:cmFleft .3s;
 }
 
 #alb3Back::before{
@@ -602,6 +605,7 @@ section{
    top:0;
    left:0;
    z-index:1;
+   -webkit-backdrop-filter:blur(3px);
    backdrop-filter:blur(3px);
 }
 
@@ -623,9 +627,9 @@ section{
    padding:.3em 1em;
 }
 
-#songDet3>div{
-   flex:1;
+.songDet,#songDet3>div,#songDet2{
    -webkit-box-flex:1;
+   flex:1;
    padding-top:.5em;
    overflow:hidden;
    font-size:1.1em;
@@ -651,8 +655,8 @@ section{
 }
 
 #track{
-   appearance: none;
    -webkit-appearance:none;
+   appearance: none;
    display:block;
    margin:.5em auto;
    border-radius:.3em;
@@ -731,8 +735,8 @@ section{
 }
 
 .clck{
-   animation:clck .8s;
    -webkit-animation:clck .8s;
+   animation:clck .8s;
 }
 @keyframes clck{
    0%{
@@ -965,7 +969,6 @@ section{
    to{top:0;}
 }
 
-
 /* Media Query */
 @media screen and (min-width:781px){
    html{
@@ -978,14 +981,15 @@ section{
       max-width: 100%;
    }
    #player{
-      display: flex;
       display: -webkit-box;
-      position: relative;
+      display: flex;
+      position: sticky;
       width: 480px;
       top: 0;
    }
    #fixPlrWrap{
       margin:0 auto;
+      display: none;
    }
    #mnPlrBtn{
       display: none;

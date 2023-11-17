@@ -172,7 +172,7 @@
      },
      
      {
-      singers : "Tanishk Bagchi, Dhvani Bhanushali, Rashmi Virag", 
+      singers : "Tanishk Bagchi, Dhvani Bhanushali", 
       album: "https://dl.dropbox.com/s/ofoquybqw2q47tr/leja-re.jpg", 
       sorc: "https://dl.dropbox.com/s/rtzdwaphr0diyqi/leja%20re.mp3"
 //Credits - https://youtu.be/NNqLB7znMLU
@@ -249,7 +249,7 @@
      },
      
      {
-      singers : "Dhvani Bhanushali, Jubin Nautiyal, Lijo George-Dj Chetas", 
+      singers : "Dhvani Bhanushali", 
       album: "https://dl.dropbox.com/s/mztkt40xtco0m7k/nayan.jpg", 
       sorc: "https://dl.dropbox.com/s/2zdfcfea3vhr47f/nayan.mp3"
 //Credits - https://youtu.be/1qlw555_I58
