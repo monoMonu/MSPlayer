@@ -1,155 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>MSPlayer [Dark Mode ON]</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="style.css" rel="stylesheet">
-    
+   <title>MSPlayer [Dark Mode ON]</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 
-<section id="loadin_pg">
-   <div id="hdphone">
-      <div class="left"></div>
-      <div class="right"></div>
-      <div class="freqCont">
-         <span class="freq f1"></span>
-         <span class="freq f2"></span>
-         <span class="freq f3"></span>
-         <span class="freq f4"></span>
-         <span class="freq f5"></span>
-      </div>
-   </div>
-   <p id="appNm">MSPlayer<br><small>Created by - Monu</small></p>
-</section>
-<div class="container">
-<section id="music_pg">
-   <div class="header">
-      <span id="welcome"></span>
-      <button class="bi-search" id="search"></button>
-      <button class="bi-bell"></button>
-      <button onclick="oSettings()" class="bi-sliders"></button>
-      <div id="srchFild">
-         <button class="bi-arrow-left-short" id="srchBack"></button>
-         <input type="search" id="searchBar" placeholder="Search..." autofocus>
-      </div>
-   </div>
-   <div class="nav">
-      <button id="allSong">ALL SONGS</button>
-      <button id="fav">FAVOURITES</button>
-      <p id="slider"></p>
-   </div>
-   <div id="allSongs" class="secs"></div>
-   <div id="favs" class="secs"></div>
-   <div id="fixPlrWrap">
-      <div id="fixPlayer">
-         <button id="mnPlrBtn" class="bi-chevron-double-up"></button>
-         <div class="albm">
-            <img id="alb2" src="#">
-            <div id="songLoader2"><span></span></div>
-         </div>
-         <div id="songDet2">
-            <div id="name2"></div>
-            <p id="singers2"></p>
-         </div>
-         <button class="bi-arrow-clockwise cntrlsB" id="replay"></button>
-         <button class="bi-play cntrlsB" id="playB"></button>
-        </div>
-   </div>
-</section>
-<section id="settings">
-   <div id="setiTop">
-      <button class="bi-arrow-left-short" onclick="cSettings()"></button>
-      <p>SETTINGS</p>
-   </div>
-   <div id="setting">
-      <div>
-         <div class="seti setiHdi">App Setting</div>
-         <div class="seti">Account<br>
-            <p>Your account setting</p>
-         </div>
-         <div class="seti">Notifications<br>
-            <p>Turn ON/OFF notifications</p>
-         </div>
-         <div class="seti">Volume<br>
-            <input id="volum" type="range" min="0" max="100" value="70">
-         </div>
-         <div class="seti themes" onclick="themeOpn()">Themes<br>
-            <p>Current Theme:<span id="curTheme"></span></p>
+   <section id="loadin_pg">
+      <div id="hdphone">
+         <div class="left"></div>
+         <div class="right"></div>
+         <div class="freqCont">
+            <span class="freq f1"></span>
+            <span class="freq f2"></span>
+            <span class="freq f3"></span>
+            <span class="freq f4"></span>
+            <span class="freq f5"></span>
          </div>
       </div>
-      <div>
-         <div class="seti setiHdi">About</div>
-         <div class="seti">Version<br>
-            <p>1.00.000</p>
+      <p id="appNm">MSPlayer<br><small>Created by - Monu</small></p>
+   </section>
+   <div class="container">
+      <section id="music_pg">
+         <div class="header">
+            <span id="welcome"></span>
+            <button class="bi-search" id="search"></button>
+            <button class="bi-bell"></button>
+            <button onclick="oSettings()" class="bi-sliders"></button>
+            <div id="srchFild">
+               <button class="bi-arrow-left-short" id="srchBack"></button>
+               <input type="search" id="searchBar" placeholder="Search..." autofocus>
+            </div>
          </div>
-         <div class="seti">Terms and Conditions<br>
-            <p>All the stuff you need to know.</p>
+         <div class="nav">
+            <button id="allSong">ALL SONGS</button>
+            <button id="fav">FAVOURITES</button>
+            <p id="slider"></p>
          </div>
-         <div class="seti">Privacy Policy<br>
-            <p>Important for both of us.</p>
+         <div id="allSongs" class="secs"></div>
+         <div id="favs" class="secs"></div>
+         <div id="fixPlrWrap">
+            <div id="fixPlayer">
+               <button id="mnPlrBtn" class="bi-chevron-double-up"></button>
+               <div class="albm">
+                  <img id="alb2" src="#">
+                  <div id="songLoader2"><span></span></div>
+               </div>
+               <div id="songDet2">
+                  <div id="name2"></div>
+                  <p id="singers2"></p>
+               </div>
+               <button class="bi-arrow-clockwise cntrlsB" id="replay"></button>
+               <button class="bi-play cntrlsB" id="playB"></button>
+            </div>
          </div>
-         <div class="seti">Help<br>
-            <p>Get help from us and community.</p>
+      </section>
+      <section id="settings">
+         <div id="setiTop">
+            <button class="bi-arrow-left-short" onclick="cSettings()"></button>
+            <p>SETTINGS</p>
          </div>
-      </div>
+         <div id="setting">
+            <div>
+               <div class="seti setiHdi">App Setting</div>
+               <div class="seti">Account<br>
+                  <p>Your account setting</p>
+               </div>
+               <div class="seti">Notifications<br>
+                  <p>Turn ON/OFF notifications</p>
+               </div>
+               <div class="seti">Volume<br>
+                  <input id="volum" type="range" min="0" max="100" value="70">
+               </div>
+               <div class="seti themes" onclick="themeOpn()">Themes<br>
+                  <p>Current Theme:<span id="curTheme"></span></p>
+               </div>
+            </div>
+            <div>
+               <div class="seti setiHdi">About</div>
+               <div class="seti">Version<br>
+                  <p>1.00.000</p>
+               </div>
+               <div class="seti">Terms and Conditions<br>
+                  <p>All the stuff you need to know.</p>
+               </div>
+               <div class="seti">Privacy Policy<br>
+                  <p>Important for both of us.</p>
+               </div>
+               <div class="seti">Help<br>
+                  <p>Get help from us and community.</p>
+               </div>
+            </div>
+         </div>
+         <p id="right">©Monu,2022. All Rights Reserved.</p>
+         <div id="themePlat">
+            <div>
+               <div>
+                  <span class="theme th1" onclick="setTheme('red')"></span>
+                  <span class="theme th2" onclick="setTheme('blue')"></span>
+                  <span class="theme th3" onclick="setTheme('green')"></span>
+                  <span class="theme th4" onclick="setTheme('choco')"></span>
+                  <span class="theme th5" onclick="setTheme('indigo')"></span>
+               </div>
+               <button class="themeClos" onclick="themeClos()">CLOSE</button>
+            </div>
+         </div>
+      </section>
    </div>
-   <p id="right">©Monu,2022. All Rights Reserved.</p>
-   <div id="themePlat">
-      <div>
-         <span class="theme th1" onclick="setTheme('red')"></span>
-         <span class="theme th2" onclick="setTheme('blue')"></span>
-         <span class="theme th3" onclick="setTheme('green')"></span>
-         <span class="theme th4" onclick="setTheme('choco')"></span>
-         <span class="theme th5" onclick="setTheme('indigo')"></span>
-         <button class="themeClos" onclick="themeClos()">CLOSE</button>
-      </div>
-   </div>
-</section>
-</div>
 
-<section id="player">
-   <div id="plrTop">
-      <button class="bi-chevron-down plrBack" onclick="closPlr()"></button>
-      <div><span>Playing for You</span><br><span class="lin2">Keep Listening</span></div>
-      <button onclick="oSettings()" class="bi-sliders"></button>
-   </div>
-   <div id="plrMid">
-      <div id="alb3Back">
-         <img id="alb3" src="#">
-         <div id="songLoader1">
-            <span></span>
+   <section id="player">
+      <div id="plrTop">
+         <button class="bi-chevron-down plrBack" onclick="closPlr()"></button>
+         <div><span>Playing for You</span><br><span class="lin2">Keep Listening</span></div>
+         <button onclick="oSettings()" class="bi-sliders"></button>
+      </div>
+      <div id="plrMid">
+         <div id="alb3Back">
+            <img id="alb3" src="#">
+            <div id="songLoader1">
+               <span></span>
+            </div>
          </div>
       </div>
-   </div>
-   <div id="plrBot">
-      <div id="songDet3">
-         <div>
-            <div id="name3"></div>
-            <p id="singers3"></p>
+      <div id="plrBot">
+         <div id="songDet3">
+            <div>
+               <div id="name3"></div>
+               <p id="singers3"></p>
+            </div>
+            <button id="mnPlrLik" class="bi-heart toLik"></button>
          </div>
-         <button id="mnPlrLik" class="bi-heart toLik"></button>
-      </div>
-      <div id="track_set">
-         <input id="track" min="0" max="100" value="0" type="range">
-         <div>
-            <span id="curDur">00:00</span>
-            <span id="endDur">3:22</span>
+         <div id="track_set">
+            <input id="track" min="0" max="100" value="0" type="range">
+            <div>
+               <span id="curDur">00:00</span>
+               <span id="endDur">3:22</span>
+            </div>
+         </div>
+         <div id="playCnt">
+            <button class="bi-share" id="share"></button>
+            <button id="prev" class="bi-skip-start"></button>
+            <button id="play" class="bi-play"></button>
+            <button id="nxt" class="bi-skip-end"></button>
+            <button class="bi-arrow-repeat" id="loop"></button>
          </div>
       </div>
-      <div id="playCnt">
-         <button class="bi-share" id="share"></button>
-         <button id="prev" class="bi-skip-start"></button>
-         <button id="play" class="bi-play"></button>
-         <button id="nxt" class="bi-skip-end"></button>
-         <button class="bi-arrow-repeat" id="loop"></button>
-      </div>
-   </div>
-</section>
+   </section>
 
-<!-- JavaScript -->
-<script src="script.js"></script>
-    
+   <!-- JavaScript -->
+   <script src="script.js"></script>
+
 </body>
+
 </html>
