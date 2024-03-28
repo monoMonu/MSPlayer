@@ -1,8 +1,9 @@
-# MSPlayer
+# MSPlayer - A Music Player
 
-- A simple Music Player Site (UI/UX)
-- Completely responsive
-- Available in multiple themes (Go to setting to change theme)
+- It is a Music Player Site
+- Completely interactive, Clean and responsive UI/UX
+- Responsive
+- Available in multiple themes (Go to setting to change the theme)
 - Volume control
 - Track Slider control
 - Functional
