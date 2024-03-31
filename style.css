@@ -688,7 +688,7 @@ section{
 }
 
 #playCnt{
-   padding:0 1.2em .2em;
+   padding:0 1.2em clamp(.4em, .75em, 1em);
 }
 
 #track_set>div{
