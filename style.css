@@ -21,6 +21,19 @@
    --theme-L:#8BA;
 }
 
+*::-webkit-scrollbar {
+   width: 12px;
+   background: #22222b;
+   border-radius: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: var(--theme);
+   width: 10px;
+   border: 2.5px #22222b solid;
+   border-radius: 10px;
+}
+
 button{
    display:block;
    background:transparent;
